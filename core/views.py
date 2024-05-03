@@ -27,7 +27,7 @@ def index(request):
         "products":products
     }
 
-    return render(request, '/core/index.html', context)
+    return render(request, 'core/index.html', context)
 
 
 def product_list_view(request):
