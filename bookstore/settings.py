@@ -169,3 +169,4 @@ LOGOUT_REDIRECT_URL = 'index'
 
 
 
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
