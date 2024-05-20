@@ -108,7 +108,7 @@
             </div>
             <div class="ps-section__content">
                 <div class="row">
-                    {% for product in top_five_products %}
+                    {% for product in bookshop_product %}
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
                             <div class="ps-product--fashion">
                                     <div class="ps-product__thumbnail"><a class="ps-product__overlay" href="{% url 'product_detail' product.slug %}"></a><img class="lazy" src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.png' %}{% endif %}" alt="">
