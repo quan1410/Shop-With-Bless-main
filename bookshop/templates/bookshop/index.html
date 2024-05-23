@@ -108,7 +108,7 @@
             </div>
             <div class="ps-section__content">
                 <div class="row">
-                    {% for product in top_five_products %}
+                    {% for product in bookshop_product %}
                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
                             <div class="ps-product--fashion">
                                     <div class="ps-product__thumbnail"><a class="ps-product__overlay" href="{% url 'product_detail' product.slug %}"></a><img class="lazy" src="{% if product.image %}{{ product.image.url }}{% else %}{% static 'img/no_image.png' %}{% endif %}" alt="">
@@ -178,25 +178,6 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-
-
-    <div class="ps-section--partner">
-        <div class="ps-container">
-            <div class="owl-slider" data-owl-auto="true" data-owl-loop="true" data-owl-speed="5000" data-owl-gap="60" data-owl-nav="false" data-owl-dots="false" data-owl-item="5" data-owl-item-xs="3" 
-            data-owl-item-sm="3" data-owl-item-md="4" data-owl-item-lg="5" data-owl-duration="1000" 
-            data-owl-mousedrag="on"><a href="#">
-                <img src="{% static 'bookshop/images/partner/1.png' %}" alt=""></a><a href="#">
-                <img src="{% static 'bookshop/images/partner/2.png' %}" alt=""></a><a href="#">
-                <img src="{% static 'bookshop/images/partner/3.png' %}" alt=""></a><a href="#">
-                <img src="{% static 'bookshop/images/partner/4.png' %}" alt=""></a><a href="#">
-                <img src="{% static 'bookshop/images/partner/5.png' %}" alt=""></a><a href="#">
-                <img src="{% static 'bookshop/images/partner/1.png' %}" alt=""></a><a href="#">
-                <img src="{% static 'bookshop/images/partner/2.png' %}" alt=""></a><a href="#">
-                <img src="{% static 'bookshop/images/partner/3.png' %}" alt=""></a><a href="#">
-                <img src="{% static 'bookshop/images/partner/4.png' %}" alt=""></a><a href="#">
-                <img src="{% static 'bookshop/images/partner/5.png' %}" alt=""></a></div>
         </div>
     </div>
 {% endblock %}

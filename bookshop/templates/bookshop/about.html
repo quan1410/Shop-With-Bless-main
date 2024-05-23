@@ -1,0 +1,8 @@
+{% extends 'bookshop/base.html' %}
+{% load static %}
+<title>{% block title %} About | Bookshop{% endblock%}</title>
+{% block content %} 
+    {% for category in categories %}
+        <div>Web chuyên bán sếch</div>
+    {% endfor %}
+{% endblock %}
