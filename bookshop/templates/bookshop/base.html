@@ -9,7 +9,7 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="apple-mobile-web-app-capable" content="yes">
         <link href="apple-touch-icon.png" rel="apple-touch-icon">
-        <link href="{% static 'bookshop/favicon.png' %}" rel="icon">
+        <link href="{% static 'bookshop/favicon.png' %}?v=1.1" rel="icon">
         <meta name="author" content="Nghia Minh Luong">
         <meta name="keywords" content="">
         <meta name="description" content="">
@@ -69,7 +69,7 @@
             <nav class="navigation">
                 <div class="container-fluid">
                     <div class="left">
-                        <div class="header__logo"><a class="ps-logo" href="{% url 'index' %}"><img src="{% static 'bookshop/images/logo.png' %}" alt=""></a></div>
+                        <div class="header__logo"><a class="ps-logo" href="{% url 'index' %}"><img src="{% static 'bookshop/images/logo.png' %}?v=1.1" alt=""></a></div>
                     </div>
                     <div class="center">
                         <ul class="main-menu menu">
@@ -168,12 +168,13 @@
                 <div class="ps-container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
-                            <div class="ps-site-info site-info"><a class="ps-logo" href="index.html"><img src="{% static 'bookshop/images/logo.png' %}" alt=""></a>
-                                <p>Xuper is a global fashion destination for 20-somethings. We sell cutting-edge fashion and offer a wide variety of fashion-related content, making Xuper Store the hub of a thriving fashion community.</p>
+                            <div class="ps-site-info site-info"><a class="ps-logo" href="index.html"><img src="{% static 'bookshop/images/logo.png' %}?v=1.1" alt="Logo">
+                            </a>
+                                <p></p>
                                 <div class="ps-site-info__contact">
                                     <h4>Contact Info</h4>
-                                    <p>Islamabad, Pakistan</p>
-                                    <p>(+92 ) 3062 281637</p>
+                                    <p>Hanoi, Vietnam</p>
+                                    <p>+84 377 888 999</p>
                                 </div>
                                 <ul class="ps-social">
                                     <li><a href="https://www.facebook.com/sk7698277"><i class="fa fa-facebook"></i></a></li>
@@ -185,16 +186,6 @@
                         <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 ">
                             <div class="row">
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
-                                    <div class="ps-widget ps-widget--footer widget widget_footer">
-                                        <h2 class="ps-widget__title">Our Branding</h2>
-                                        <ul class="ps-list--line">
-                                            <li><a class="text-uppercase" href="#">DKNY</a></li>
-                                            <li><a class="text-uppercase" href="#">GUCCI</a></li>
-                                            <li><a class="text-uppercase" href="#">BANANA & DOLCE</a></li>
-                                            <li><a class="text-uppercase" href="#">HERMER</a></li>
-                                            <li><a class="text-uppercase" href="#">CHANEL</a></li>
-                                        </ul>
-                                    </div>
                                 </div>
                                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 ">
                                     <div class="ps-widget ps-widget--footer widget widget_footer">
@@ -229,7 +220,6 @@
                 <div class="ps-container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
-                            <p>&copy; Copyright  <span>2020</span>. Design by <a href="https://www.twitter.com/sk7698277">Sajjad Khan</a>.</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 ">
                             <div class="ps-footer__payment-methods"><a href="#"><img src="{% static 'bookshop/images/payment-method/paypal.png' %}" alt=""></a><a href="#"><img src="{% static 'bookshop/images/payment-method/visa.png' %}" alt=""></a><a href="#"><img src="{% static 'bookshop/images/payment-method/master-card.png' %}" alt=""></a></div>
