@@ -30,7 +30,7 @@ SECRET_KEY = env.str("SECRET_KEY")
 DEBUG = env.bool("DEBUG", default=False)
 
 ALLOWED_HOSTS = [".fly.dev", "localhost", "127.0.0.1"]
-CSRF_TRUSTED_ORIGINS = ["https://bookstore.fly.dev"]
+CSRF_TRUSTED_ORIGINS = ["https://bookshop.fly.dev"]
 
 
 # Application definition
