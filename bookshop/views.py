@@ -53,6 +53,9 @@ def all_Categories(request):
 def contact_us(request):
     return render(request,'bookshop/contact_us.html')
 
+def about(request):
+    return render(request,'bookshop/about.html')
+
 
 def search_Result(request):
     if request.method== 'POST':
