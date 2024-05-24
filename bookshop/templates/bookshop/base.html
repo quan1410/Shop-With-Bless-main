@@ -45,21 +45,24 @@
                         <div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 ">
                             <div class="header__actions">
                                 {% if user.is_authenticated %}
-                                    <div class="btn-group ps-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">My Account<i class="fa fa-angle-down"></i></a>
-                                        <ul class="dropdown-menu">
-                                            <li><a href="#">My Dashboard</a></li>
-                                            <li><a href="{% url 'logout' %}">Logout</a></li>
-                                            
-                                        </ul>
-                                    </div>
-                                {% else %}
-                                <div class="btn-group ps-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login & Regiser <i class="fa fa-angle-down"></i></a>
-                                    <ul class="dropdown-menu">
-                                        <li><a href="{% url 'login' %}">Login</a></li>
-                                        <li><a href="{% url 'register' %}"> Register</a></li>
-                                    </ul>
-                                </div>
-                                {% endif %}
+    <div class="btn-group ps-dropdown">
+        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ user.username }} <i class="fa fa-angle-down"></i>
+        </a>
+        <ul class="dropdown-menu">
+            <li><a href="#">My Dashboard</a></li>
+            <li><a href="{% url 'logout' %}">Logout</a></li>
+        </ul>
+    </div>
+{% else %}
+    <div class="btn-group ps-dropdown">
+        <a class="dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Login & Regiser <i class="fa fa-angle-down"></i></a>
+        <ul class="dropdown-menu">
+            <li><a href="{% url 'login' %}">Login</a></li>
+            <li><a href="{% url 'register' %}"> Register</a></li>
+        </ul>
+    </div>
+{% endif %}
    
                             </div>
                         </div>
