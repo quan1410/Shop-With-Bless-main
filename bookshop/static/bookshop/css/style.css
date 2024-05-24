@@ -5686,7 +5686,8 @@ main.ps-main {
     .menu > li.current-menu-item > a:before {
       visibility: visible;
       opacity: 1;
-      width: 100%; }
+      /* width: 100%;  */
+    }
     .menu > li:hover > .sub-menu {
       visibility: visible;
       opacity: 1;
