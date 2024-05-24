@@ -163,8 +163,9 @@ BRAINTREE_CONF = braintree.Configuration(
 )
 
 
-LOGIN_REDIRECT_URL = 'index'
+LOGIN_URL = '/account/login'
 LOGOUT_REDIRECT_URL = 'index'
+
 
 
 

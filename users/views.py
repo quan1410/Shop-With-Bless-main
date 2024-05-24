@@ -1,8 +1,11 @@
 from django.shortcuts import render,redirect,HttpResponse
 from django.contrib.auth.models import User
 from django.contrib import messages,auth
-from django.contrib.auth import logout as auth_logout
-
+from django.contrib.auth import logout
+from django.shortcuts import redirect
+from django.shortcuts import render, redirect
+from django.contrib.auth.decorators import login_required
+from django.contrib.auth.models import User
 # Create your views here.
 
 
@@ -53,10 +56,16 @@ def login(request):
     
 
 
+@login_required
 def dashboard(request):
-    return HttpResponse("dashboard")
-
-def logout(request):
-    auth_logout(request)
-    messages.success(request, "You have been logged out.")
-    return redirect('login')
+    # Lấy thông tin của người dùng hiện tại
+    user = request.user
+    context = {
+        'user': user
+        # Các thông tin khác bạn muốn hiển thị trên dashboard
+    }
+    return render(request, 'users/dashboard.html', context)
+def logout_user(request):
+    logout(request)
+    messages.success(request, 'You have been logged out successfully.')
+    return redirect('login')    
